@@ -1,0 +1,5 @@
+{
+  "functions": {
+    "app/api/proforma/route.ts": { "runtime": "nodejs20.x" }
+  }
+}
