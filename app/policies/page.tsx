@@ -1,0 +1,1 @@
+export default function P(){return(<main className='container py-8 max-w-3xl'><pre className='text-sm whitespace-pre-wrap'>{`See /policies markdown files in public/`}</pre></main>)}

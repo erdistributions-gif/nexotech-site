@@ -1,0 +1,47 @@
+[
+  {
+    "SKU": "DEL-LAP-LAT540-00001",
+    "Brand": "Dell",
+    "Model": "Latitude 5400",
+    "Category": "Laptop",
+    "CPU": "i5-8365U",
+    "RAM (GB)": 16,
+    "Storage": "512GB SSD",
+    "Screen": "14\" FHD",
+    "Condition Grade": "A",
+    "OS": "Windows 10",
+    "Qty Available": 120,
+    "MOQ": 1,
+    "Your Price USD": 234.0
+  },
+  {
+    "SKU": "HP-DES-ELT800-00002",
+    "Brand": "HP",
+    "Model": "EliteDesk 800 G4",
+    "Category": "Desktop",
+    "CPU": "i5-8500",
+    "RAM (GB)": 16,
+    "Storage": "512GB SSD",
+    "Screen": "\u2014",
+    "Condition Grade": "A-",
+    "OS": "Windows 10",
+    "Qty Available": 80,
+    "MOQ": 1,
+    "Your Price USD": 199.5
+  },
+  {
+    "SKU": "LEN-LAP-T480-00003",
+    "Brand": "Lenovo",
+    "Model": "ThinkPad T480",
+    "Category": "Laptop",
+    "CPU": "i5-8350U",
+    "RAM (GB)": 16,
+    "Storage": "256GB SSD",
+    "Screen": "14\" FHD",
+    "Condition Grade": "B",
+    "OS": "Windows 10",
+    "Qty Available": 200,
+    "MOQ": 1,
+    "Your Price USD": 189.8
+  }
+]
