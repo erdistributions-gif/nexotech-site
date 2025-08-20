@@ -1,1 +1,7 @@
-'use client';import React,{createContext,useContext,useEffect,useMemo,useState}from'react';type L='en'|'es';const C=createContext({lang:'en' as L,setLang:(l:L)=>{},t:(k:string)=>k});const D={en:{faq:'FAQ',faq_es:'Preguntas frecuentes',wa:'WhatsApp',rights:'All rights reserved. FCA Miami. Wire only.'},es:{faq:'FAQ',faq_es:'Preguntas frecuentes',wa:'WhatsApp',rights:'Todos los derechos reservados. FCA Miami. Transferencia.'}};export function I18nProvider({children,initialLang}:{children:React.ReactNode;initialLang?:L}){const[lang,setLang]=useState<L>(initialLang||'en');useEffect(()=>{const s=typeof window!=='undefined'?localStorage.getItem('lang') as L|null:null;if(s==='en'||s==='es')setLang(s);},[]);useEffect(()=>{if(typeof window!=='undefined')localStorage.setItem('lang',lang);},[lang]);const t=useMemo(()=> (k:string)=>D[lang][k]??k,[lang]);return <C.Provider value={{lang,setLang,t}}>{children}</C.Provider>}export function useI18n(){return useContext(C)}export function LangToggle(){const{lang,setLang}=useI18n();return(<div className='text-sm border rounded-xl px-2 py-1'><button onClick={()=>setLang('en')} className={lang==='en'?'font-semibold':''}>EN</button><span className='mx-1'>/</span><button onClick={()=>setLang('es')} className={lang==='es'?'font-semibold':''}>ES</button></div>);}
+'use client';
+
+import { I18nProvider } from '@/components/i18n';
+
+export default function Providers({ children }: { children: React.ReactNode }) {
+  return <I18nProvider>{children}</I18nProvider>;
+}
